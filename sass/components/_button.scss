@@ -1,0 +1,126 @@
+.components {
+  &__buttons {
+    text-align: center;
+  }
+  &__button {
+    cursor: pointer;
+
+    &--training {
+      width: 49.5%;
+      font-size: 18px;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-radius: 6px;
+      border-color: #3498db;
+      color: #fff;
+      background-color: #215375;
+      transition: 150ms;
+
+      @media screen and (max-width: 567px) {
+        font-size: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      &:hover {
+        background: #0f3046;
+        transition: 150ms;
+      }
+    }
+
+    &--show-words {
+      margin-top: 17px;
+      display: block;
+      text-decoration: underline;
+      margin-left: auto;
+      margin-right: auto;
+      color: #3498db;
+      background: none;
+      border: none;
+      transition: 150ms;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &--create {
+      width: 100px;
+      display: block;
+      font-size: 14px;
+      margin-left: auto;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      background-color: #34be5b;
+      transition: 150ms;
+      margin-left: auto;
+
+      @media screen and (max-width: 567px) {
+        position: absolute;
+        bottom: -120px;
+        right: 0;
+      }
+
+      &:hover {
+        background: #30974d;
+        transition: 150ms;
+      }
+    }
+
+    &--access {
+      width: 90%;
+      display: block;
+      font-size: 16px;
+      padding: 15px;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      background-color: #34be5b;
+      transition: 150ms;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:hover {
+        background: #30974d;
+        transition: 150ms;
+      }
+    }
+
+    &--added-card {
+      width: 300px;
+      font-size: 16px;
+      padding: 15px;
+      border-radius: 6px;
+      border-color: #3498db;
+      color: #fff;
+      background-color: #215375;
+      transition: 150ms;
+
+      @media screen and (max-width: 567px) {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      &:hover {
+        background: #0f3046;
+        transition: 150ms;
+      }
+    }
+
+    &--disable {
+      cursor: default;
+      background-color: #bfbfbf;
+
+      &:hover {
+        background-color: #bfbfbf;
+      }
+    }
+  }
+}

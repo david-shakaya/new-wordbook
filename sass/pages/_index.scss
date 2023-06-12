@@ -1,0 +1,45 @@
+$laptop: 1199px;
+$pad: 991px;
+$padmini: 767px;
+$mobile: 576px;
+
+.main-page {
+  padding-top: 130px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+    position: relative;
+
+    @media screen and(max-width: 576px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.splide__slide {
+  padding-top: 10px;
+}
+
+// .swiper-slide {
+//   align-items: center;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .swiper-wrapper {
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+// }

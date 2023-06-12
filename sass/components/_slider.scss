@@ -1,0 +1,17 @@
+.splide {
+  &__arrow {
+    &--prev {
+      left: -45px !important;
+    }
+    &--next {
+      right: -45px !important;
+    }
+
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  &__pagination {
+    bottom: -10px !important;
+  }
+}

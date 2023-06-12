@@ -1,0 +1,149 @@
+.dark-theme {
+  .header {
+    background-color: #161b22;
+    color: #e2e2e2;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .header__logo-link {
+    background-color: #161b22;
+    color: #e2e2e2;
+  }
+
+  .header__menu-link {
+    color: #e2e2e2;
+
+    &::after {
+      background-color: #d3d3d4;
+    }
+  }
+
+  // .header__link--is-active {
+  //   color: #e2e2e2;
+  // }
+
+  .header__logo-link {
+    background-image: url("../../img/logo7.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-size: contain;
+  }
+
+  .header__icon-user {
+    border: 1px #e2e2e2 solid;
+
+    &--svg {
+      fill: #e2e2e2;
+    }
+  }
+
+  .header__menu-mob,
+  .header-menu-mob__item--log,
+  .header-menu-mob__item--reg {
+    background-color: #2a2c2d;
+  }
+
+  .header-menu-mob__link {
+    color: #e2e2e2;
+  }
+  .header-menu-mob__item {
+    border-bottom: 1px solid #383838;
+  }
+
+  .buy-access__item {
+    background-color: #161b22;
+  }
+
+  .create-cards-page__textarea {
+    color: #e2e2e2;
+  }
+}
+
+/* THEME SWITCH */
+.theme-switch {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch__icon {
+  color: currentColor;
+  height: 14px;
+  width: 24px;
+
+  @media screen and (max-width: 567px) {
+    height: 10px;
+    width: 14px;
+  }
+}
+
+.theme-switch__control {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 42px;
+  height: 23px;
+  border-radius: 50em;
+  padding: 3px 0;
+
+  @media screen and (max-width: 567px) {
+    width: 31px;
+    height: 16px;
+  }
+}
+
+.theme-switch__toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.theme-switch__track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  user-select: none;
+  background-color: #333;
+  border-radius: inherit;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.theme-switch__marker {
+  position: relative;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  transform: translateX(3px);
+  transition: transform 250ms;
+
+  @media screen and (max-width: 567px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.theme-switch__toggle:checked + .theme-switch__track {
+  background-color: #727376;
+}
+
+.theme-switch__toggle:checked ~ .theme-switch__marker {
+  transform: translateX(21px);
+
+  @media screen and (max-width: 567px) {
+    transform: translateX(19px);
+  }
+}

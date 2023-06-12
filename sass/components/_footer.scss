@@ -1,0 +1,38 @@
+.footer {
+  background-color: #161b22;
+  margin-top: -100px;
+
+  &__container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    // border-top: 1px #d0d7de solid;
+  }
+
+  &__list {
+    max-width: 785px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 567px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.footer-list {
+  &__link {
+    color: #e2e2e2;
+  }
+
+  &__item {
+    @media screen and (max-width: 567px) {
+      width: 40%;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+}

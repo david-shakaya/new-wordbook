@@ -1,0 +1,35 @@
+.cards-page {
+  padding-top: 100px;
+  padding-bottom: 20px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+
+.cards-page-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  @media screen and (max-width: 567px) {
+    justify-content: center;
+  }
+  &__item {
+    margin: 10px;
+  }
+  &__subtitle {
+    text-align: center;
+    color: rgb(5, 146, 5);
+  }
+
+  &__plus {
+    font-size: 58px;
+    display: block;
+  }
+}

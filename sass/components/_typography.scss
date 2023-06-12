@@ -1,0 +1,29 @@
+.typography {
+  &__h1 {
+    text-align: center;
+    font-size: 32px;
+
+    @media screen and (max-width: 567px) {
+      font-size: 22px;
+    }
+  }
+
+  &__h2 {
+    text-align: center;
+    font-size: 28px;
+
+    @media screen and (max-width: 567px) {
+      font-size: 20px;
+    }
+  }
+
+  &__h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+}
